@@ -4,7 +4,7 @@ A responsive and modern portfolio website showcasing my skills, projects, and ac
 
 ## 🚀 Live Demo
 
-[Add your portfolio live link here]
+https://allenchandev25-del.github.io/allenchandev_portfolio/
 
 ## 📋 About
 
@@ -29,12 +29,19 @@ This is my personal portfolio website built with HTML and CSS. It features a cle
 portfolio/
 │
 ├── index.html # Main HTML file
+
 ├── style.css # Stylesheet
+
 ├── allenchandev.jpg # Profile picture
+
 ├── html.png # HTML certificate
+
 ├── oracle.png # Oracle certificate
+
 ├── css.png # CSS certificate
+
 ├── Gk-hacks.jpg # GK Hacks participation
+
 └── zivon.jpg # Code Marathon participation
 ## 🎯 Sections
 
