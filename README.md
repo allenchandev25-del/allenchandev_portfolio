@@ -4,7 +4,7 @@ A modern, responsive portfolio website showcasing my skills, projects, and conta
 
 ## 🚀 Live Demo
 
-[Add your live portfolio link here once deployed]
+https://allenchandev25-del.github.io/allenchandev_portfolio/
 
 ## 📋 About
 
