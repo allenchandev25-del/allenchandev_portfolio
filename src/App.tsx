@@ -77,7 +77,14 @@ const FeaturedProjects = () => {
                   referrerPolicy="no-referrer"
                 />
               </div>
-              <h3 className="text-2xl font-bold mb-3">{work.title}</h3>
+              <div className="flex items-start justify-between mb-3 gap-4">
+                <h3 className="text-2xl font-bold">{work.title}</h3>
+                <a href="https://github.com/allenchandev25-del" target="_blank" rel="noopener noreferrer" className="shrink-0 p-2 bg-neutral-200 dark:bg-neutral-800 rounded-full hover:scale-110 transition-transform text-neutral-600 dark:text-neutral-400 hover:text-black dark:hover:text-white" title="View Source">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.02c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                </a>
+              </div>
               <p className="text-base text-neutral-600 dark:text-neutral-400 mb-5 whitespace-normal line-clamp-3">
                 {work.description}
               </p>
