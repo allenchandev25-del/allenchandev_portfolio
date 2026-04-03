@@ -80,7 +80,7 @@ const BottomMenu = () => {
   >("default");
 
   // Track selected theme
-  const [theme, setTheme] = useState<"light" | "dark" | "system">("light");
+  const [theme, setTheme] = useState<"light" | "dark" | "system">("dark");
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (

@@ -97,7 +97,7 @@ const FeaturedProjects = () => {
 };
 
 export default function App() {
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(true);
 
   useEffect(() => {
     if (isDark) {
