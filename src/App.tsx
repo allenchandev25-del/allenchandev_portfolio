@@ -45,8 +45,8 @@ const skills = [
 ];
 
 const education = [
-  { degree: "B.Tech Computer Science Engineering", school: "Karunya Institute of Technology and Sciences", year: "2025 - 2029" },
-  { degree: "ICSE", school: "St Hilda's School Ooty", year: "2019 - 2025" }
+  { degree: "ICSE", school: "St Hilda's School Ooty", year: "2019 - 2025" },
+  { degree: "B.Tech Computer Science Engineering", school: "Karunya Institute of Technology and Sciences", year: "2025 - 2029" }
 ];
 
 const FeaturedProjects = () => {
@@ -186,8 +186,8 @@ export default function App() {
           <div className="grid gap-6 md:grid-cols-2">
             {education.map((edu, index) => (
               <div key={index} className="p-6 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900/50">
-                <h3 className="font-semibold text-lg mb-2">{edu.degree}</h3>
-                <p className="text-neutral-600 dark:text-neutral-400 mb-4">{edu.school}</p>
+                <h3 className="font-semibold text-lg mb-2">{edu.school}</h3>
+                <p className="text-neutral-600 dark:text-neutral-400 mb-4">{edu.degree}</p>
                 <span className="inline-block px-3 py-1 bg-neutral-200 dark:bg-neutral-800 rounded-full text-xs font-medium">
                   {edu.year}
                 </span>
