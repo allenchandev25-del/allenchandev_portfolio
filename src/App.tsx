@@ -204,12 +204,20 @@ export default function App() {
           <p className="text-lg text-neutral-600 dark:text-neutral-400 mb-8">
             I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!
           </p>
-          <a 
-            href="mailto:allenchandev25@gmail.com" 
-            className="inline-block px-8 py-4 bg-neutral-900 dark:bg-white text-white dark:text-neutral-900 rounded-full font-semibold text-lg hover:scale-105 transition-transform"
-          >
-            Say Hello
-          </a>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a 
+              href="mailto:allenchandev25@gmail.com" 
+              className="inline-flex items-center justify-center px-8 py-4 bg-neutral-900 dark:bg-white text-white dark:text-neutral-900 rounded-full font-semibold text-[15px] hover:scale-105 transition-transform"
+            >
+              allenchandev25@gmail.com
+            </a>
+            <a 
+              href="tel:+919487432081" 
+              className="inline-flex items-center justify-center px-8 py-4 border border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900 text-neutral-900 dark:text-white rounded-full font-semibold text-[15px] hover:scale-105 transition-transform"
+            >
+              +91 94874 32081
+            </a>
+          </div>
         </section>
       </div>
     </div>
