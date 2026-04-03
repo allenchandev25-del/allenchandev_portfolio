@@ -9,31 +9,31 @@ const works = [
   {
     title: "PathX",
     description: "Autonomous Vehicle Simulator. Engineered a high-fidelity simulator leveraging Kinematic Bicycle Models and Pure Pursuit algorithms at 60Hz. Designed a premium dark-mode dashboard with real-time telemetry visualization using D3-driven logic.",
-    image: "https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&w=600&q=80",
+    image: "/pathx.png",
     tech: ["React 19", "TypeScript", "Vite 6", "Motion"]
   },
   {
     title: "Lumina AI Assistant",
     description: "Privacy-First AI Tutoring Platform. Architected a privacy-first AI platform by migrating external API dependencies to locally-hosted inference pipelines (Ollama). Integrated dynamic interactive Flashcards directly from LLM inferences.",
-    image: "https://images.unsplash.com/photo-1540350394557-8d14678e7f91?auto=format&fit=crop&w=600&q=80",
+    image: "/lumina.png",
     tech: ["React", "TypeScript", "Ollama"]
   },
   {
     title: "Edgelytics",
     description: "Edge Computing IoT Framework. Constructed an edge-computing framework to ingest and manage real-time telemetry from Arduino microcontrollers. Implemented a local anomaly-detection algorithm to trace impossible environmental data spikes.",
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=600&q=80",
+    image: "/edgelytics.png",
     tech: ["Python", "Flask", "Arduino"]
   },
   {
     title: "Emergency Geo-Router",
     description: "Fault-Tolerant Redundant Routing System. Deployed a fault-tolerant routing application to triangulate and transmit location data in offline-critical environments. Wrote robust handling algorithms to detect low-accuracy GPS metrics.",
-    image: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=600&q=80",
+    image: "/georouter.png",
     tech: ["Geolocation API", "React"]
   },
   {
     title: "NextChapter",
     description: "Personalized Book Recommendation System. Refactored a desktop-based Python application handling complex graphical frame life-cycles and state management. Re-architected the state pipeline for a personalized book recommendation engine.",
-    image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=600&q=80",
+    image: "/nextchapter.png",
     tech: ["Python", "Tkinter"]
   }
 ];
