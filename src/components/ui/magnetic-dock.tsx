@@ -142,10 +142,9 @@ export default function MagneticDock() {
           onMouseLeave={onMouseLeave}
           className="flex h-20 items-end gap-4 rounded-2xl bg-neutral-800/50 backdrop-blur-md px-4 pb-4 shadow-lg border border-white/10"
         >
-          <DockIcon icon={<GithubIcon />} href="https://github.com" />
-          <DockIcon icon={<LinkedinIcon />} href="https://linkedin.com" />
-          <DockIcon icon={<TwitterIcon />} href="https://twitter.com" />
-          <DockIcon icon={<MailIcon />} href="mailto:hello@example.com" />
+          <DockIcon icon={<GithubIcon />} href="https://github.com/allenchandev25-del" />
+          <DockIcon icon={<LinkedinIcon />} href="https://www.linkedin.com/in/allen-chandev-36100a347/" />
+          <DockIcon icon={<MailIcon />} href="mailto:allenchandev25@gmail.com" />
         </div>
       </div>
     </MouseContext.Provider>
