@@ -59,11 +59,11 @@ const FeaturedProjects = () => {
 
   return (
     <section id="projects" ref={targetRef} className="relative h-[300vh]">
-      <div className="sticky top-0 flex h-screen items-center overflow-hidden bg-neutral-50 dark:bg-neutral-900/50 border-y border-neutral-200 dark:border-neutral-800">
-        <div className="absolute top-24 left-0 right-0 max-w-5xl mx-auto px-6 z-10 w-full">
+      <div className="sticky top-0 flex flex-col justify-center h-screen overflow-hidden bg-neutral-50 dark:bg-neutral-900/50 border-y border-neutral-200 dark:border-neutral-800">
+        <div className="w-full max-w-5xl mx-auto px-6 mb-8 lg:mb-12">
            <h2 className="text-3xl md:text-4xl font-bold">Featured Projects</h2>
         </div>
-        <motion.div style={{ x }} className="flex gap-8 pl-6 lg:pl-[calc(50vw-512px+1.5rem)] pr-6 lg:pr-[calc(50vw-512px+1.5rem)] pt-24 w-max">
+        <motion.div style={{ x }} className="flex gap-8 pl-6 lg:pl-[calc(50vw-512px+1.5rem)] pr-6 lg:pr-[calc(50vw-512px+1.5rem)] w-max">
           {works.map((work, idx) => (
             <div 
               key={idx} 
