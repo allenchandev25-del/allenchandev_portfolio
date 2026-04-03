@@ -61,12 +61,12 @@ const FeaturedProjects = () => {
     <section id="projects" ref={targetRef} className="relative h-[300vh]">
       <div className="sticky top-0 flex flex-col justify-center h-screen overflow-hidden bg-neutral-50 dark:bg-neutral-900/50 border-y border-neutral-200 dark:border-neutral-800">
         <div className="w-full max-w-5xl mx-auto px-6 mb-8 lg:mb-12">
-           <h2 className="text-3xl md:text-4xl font-bold">Featured Projects</h2>
+          <h2 className="text-3xl md:text-4xl font-bold">Featured Projects</h2>
         </div>
         <motion.div style={{ x }} className="flex gap-8 pl-6 lg:pl-[calc(50vw-512px+1.5rem)] pr-6 lg:pr-[calc(50vw-512px+1.5rem)] w-max">
           {works.map((work, idx) => (
-            <div 
-              key={idx} 
+            <div
+              key={idx}
               className="w-[400px] md:w-[500px] shrink-0 group"
             >
               <div className="overflow-hidden rounded-xl mb-6 aspect-[16/10] relative shadow-md">
@@ -135,9 +135,9 @@ export default function App() {
         <section id="about" className="scroll-mt-32">
           <div className="flex flex-col md:flex-row gap-12 items-center">
             <div className="w-48 h-48 md:w-64 md:h-64 shrink-0 rounded-full overflow-hidden border-4 border-neutral-200 dark:border-neutral-800 shadow-xl">
-              <img 
-                src="/allenchandev.jpg" 
-                alt="Profile" 
+              <img
+                src="/allenchandev.jpg"
+                alt="Profile"
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
               />
@@ -145,7 +145,9 @@ export default function App() {
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-4">About Me</h2>
               <p className="text-lg text-neutral-600 dark:text-neutral-400 leading-relaxed mb-6">
-                B.Tech CS student at Karunya University with a focus on high-fidelity simulation, AI platform architecture, and innovative engineering solutions. Dedicated to building secure, scalable, and impactful technical systems.
+                I'm pursuing B.Tech Computer Science and Engineering student at Karunya University, passionate about coding. I enjoy exploring how technology works, solving problems through programming, and applying creativity in design.
+
+                With a growing interest in cyber security, data analyst, software development, and UI/UX design, I am continuously learning and working on projects that strengthen both my technical and creative skills. I aim to build a strong foundation in emerging technologies and contribute to innovative, secure, and impactful solutions.
               </p>
               <div className="flex gap-4">
                 <a href="https://www.linkedin.com/in/allen-chandev-36100a347/" target="_blank" rel="noopener noreferrer" className="px-6 py-2 bg-blue-600 text-white rounded-full font-medium hover:bg-blue-700 transition-colors">
@@ -166,7 +168,7 @@ export default function App() {
           <h2 className="text-3xl md:text-4xl font-bold mb-8">Skills & Technologies</h2>
           <div className="flex flex-wrap gap-3">
             {skills.map((skill, index) => (
-              <span 
+              <span
                 key={index}
                 className="px-4 py-2 bg-neutral-100 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-full text-sm font-medium"
               >
@@ -205,14 +207,14 @@ export default function App() {
             I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a 
-              href="mailto:allenchandev25@gmail.com" 
+            <a
+              href="mailto:allenchandev25@gmail.com"
               className="inline-flex items-center justify-center px-8 py-4 bg-neutral-900 dark:bg-white text-white dark:text-neutral-900 rounded-full font-semibold text-[15px] hover:scale-105 transition-transform"
             >
               allenchandev25@gmail.com
             </a>
-            <a 
-              href="tel:+919487432081" 
+            <a
+              href="tel:+919487432081"
               className="inline-flex items-center justify-center px-8 py-4 border border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900 text-neutral-900 dark:text-white rounded-full font-semibold text-[15px] hover:scale-105 transition-transform"
             >
               +91 94874 32081
