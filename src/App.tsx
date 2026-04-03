@@ -7,52 +7,46 @@ import { Separator } from '@/src/components/ui/separator';
 
 const works = [
   {
-    title: "E-Commerce Platform",
-    description: "A full-stack e-commerce solution with real-time inventory.",
+    title: "PathX",
+    description: "Autonomous Vehicle Simulator. Engineered a high-fidelity simulator leveraging Kinematic Bicycle Models and Pure Pursuit algorithms at 60Hz. Designed a premium dark-mode dashboard with real-time telemetry visualization using D3-driven logic.",
     image: "https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&w=600&q=80",
-    tech: ["React", "Node.js", "MongoDB"]
+    tech: ["React 19", "TypeScript", "Vite 6", "Motion"]
   },
   {
-    title: "Task Management App",
-    description: "Collaborative task management tool with drag-and-drop.",
+    title: "Lumina AI Assistant",
+    description: "Privacy-First AI Tutoring Platform. Architected a privacy-first AI platform by migrating external API dependencies to locally-hosted inference pipelines (Ollama). Integrated dynamic interactive Flashcards directly from LLM inferences.",
     image: "https://images.unsplash.com/photo-1540350394557-8d14678e7f91?auto=format&fit=crop&w=600&q=80",
-    tech: ["TypeScript", "Next.js", "Tailwind"]
+    tech: ["React", "TypeScript", "Ollama"]
   },
   {
-    title: "AI Content Generator",
-    description: "Generates marketing copy using advanced AI models.",
+    title: "Edgelytics",
+    description: "Edge Computing IoT Framework. Constructed an edge-computing framework to ingest and manage real-time telemetry from Arduino microcontrollers. Implemented a local anomaly-detection algorithm to trace impossible environmental data spikes.",
     image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=600&q=80",
-    tech: ["OpenAI", "React", "Express"]
+    tech: ["Python", "Flask", "Arduino"]
   },
   {
-    title: "Fitness Tracker",
-    description: "Mobile-first web app to track daily workouts and nutrition.",
+    title: "Emergency Geo-Router",
+    description: "Fault-Tolerant Redundant Routing System. Deployed a fault-tolerant routing application to triangulate and transmit location data in offline-critical environments. Wrote robust handling algorithms to detect low-accuracy GPS metrics.",
     image: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=600&q=80",
-    tech: ["Vue", "Firebase", "PWA"]
+    tech: ["Geolocation API", "React"]
   },
   {
-    title: "Real-time Chat",
-    description: "Instant messaging application with end-to-end encryption.",
+    title: "NextChapter",
+    description: "Personalized Book Recommendation System. Refactored a desktop-based Python application handling complex graphical frame life-cycles and state management. Re-architected the state pipeline for a personalized book recommendation engine.",
     image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=600&q=80",
-    tech: ["Socket.io", "React", "PostgreSQL"]
+    tech: ["Python", "Tkinter"]
   }
 ];
 
 const skills = [
-  "JavaScript (ES6+)", "TypeScript", "React", "Next.js", "Node.js", 
-  "Express", "MongoDB", "PostgreSQL", "Tailwind CSS", "Git & GitHub",
-  "Docker", "AWS", "GraphQL", "RESTful APIs", "Jest & Testing Library"
-];
-
-const certifications = [
-  { name: "AWS Certified Developer - Associate", issuer: "Amazon Web Services", year: "2024" },
-  { name: "Meta Front-End Developer Professional Certificate", issuer: "Coursera", year: "2023" },
-  { name: "Google Data Analytics Professional Certificate", issuer: "Google", year: "2023" }
+  "TypeScript", "JavaScript", "Python", "C/C++", "HTML/CSS",
+  "React", "Vite", "Flask", "Tailwind CSS", "Tkinter",
+  "Ollama", "Firebase", "Git/GitHub", "VS Code"
 ];
 
 const education = [
-  { degree: "M.S. Computer Science", school: "University of Technology", year: "2016" },
-  { degree: "B.S. Software Engineering", school: "State University", year: "2014" }
+  { degree: "B.Tech Computer Science Engineering", school: "Karunya Institute of Technology and Sciences", year: "2025 - 2029" },
+  { degree: "ICSE", school: "St Hilda's School Ooty", year: "2019 - 2025" }
 ];
 
 const FeaturedProjects = () => {
@@ -142,7 +136,7 @@ export default function App() {
           <div className="flex flex-col md:flex-row gap-12 items-center">
             <div className="w-48 h-48 md:w-64 md:h-64 shrink-0 rounded-full overflow-hidden border-4 border-neutral-200 dark:border-neutral-800 shadow-xl">
               <img 
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80" 
+                src="/allenchandev.jpg" 
                 alt="Profile" 
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
@@ -151,13 +145,13 @@ export default function App() {
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-4">About Me</h2>
               <p className="text-lg text-neutral-600 dark:text-neutral-400 leading-relaxed mb-6">
-                I'm a passionate full-stack developer with a keen eye for design and a drive for building scalable, user-centric web applications. With over 5 years of experience in the industry, I specialize in the React ecosystem and modern backend technologies.
+                B.Tech CS student at Karunya University with a focus on high-fidelity simulation, AI platform architecture, and innovative engineering solutions. Dedicated to building secure, scalable, and impactful technical systems.
               </p>
               <div className="flex gap-4">
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="px-6 py-2 bg-blue-600 text-white rounded-full font-medium hover:bg-blue-700 transition-colors">
+                <a href="https://www.linkedin.com/in/allen-chandev-36100a347/" target="_blank" rel="noopener noreferrer" className="px-6 py-2 bg-blue-600 text-white rounded-full font-medium hover:bg-blue-700 transition-colors">
                   LinkedIn
                 </a>
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="px-6 py-2 bg-neutral-900 dark:bg-white text-white dark:text-neutral-900 rounded-full font-medium hover:bg-neutral-800 dark:hover:bg-neutral-200 transition-colors">
+                <a href="https://github.com/allenchandev25-del" target="_blank" rel="noopener noreferrer" className="px-6 py-2 bg-neutral-900 dark:bg-white text-white dark:text-neutral-900 rounded-full font-medium hover:bg-neutral-800 dark:hover:bg-neutral-200 transition-colors">
                   GitHub
                 </a>
               </div>
@@ -186,24 +180,6 @@ export default function App() {
       <FeaturedProjects />
 
       <div className="max-w-5xl mx-auto px-6 space-y-40 py-20">
-        {/* Certifications Section */}
-        <section id="certifications" className="scroll-mt-32">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8">Certifications</h2>
-          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {certifications.map((cert, index) => (
-              <div key={index} className="p-6 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900/50 hover:border-neutral-300 dark:hover:border-neutral-700 transition-colors">
-                <h3 className="font-semibold text-lg mb-2">{cert.name}</h3>
-                <p className="text-neutral-600 dark:text-neutral-400 text-sm mb-4">{cert.issuer}</p>
-                <span className="inline-block px-3 py-1 bg-neutral-200 dark:bg-neutral-800 rounded-full text-xs font-medium">
-                  {cert.year}
-                </span>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        <Separator className="bg-neutral-200 dark:bg-neutral-800" />
-
         {/* Education Section */}
         <section id="education" className="scroll-mt-32">
           <h2 className="text-3xl md:text-4xl font-bold mb-8">Education</h2>
@@ -229,7 +205,7 @@ export default function App() {
             I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!
           </p>
           <a 
-            href="mailto:hello@example.com" 
+            href="mailto:allenchandev25@gmail.com" 
             className="inline-block px-8 py-4 bg-neutral-900 dark:bg-white text-white dark:text-neutral-900 rounded-full font-semibold text-lg hover:scale-105 transition-transform"
           >
             Say Hello
