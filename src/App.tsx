@@ -10,31 +10,36 @@ const works = [
     title: "PathX",
     description: "Autonomous Vehicle Simulator. Engineered a high-fidelity simulator leveraging Kinematic Bicycle Models and Pure Pursuit algorithms at 60Hz. Designed a premium dark-mode dashboard with real-time telemetry visualization using D3-driven logic.",
     image: "/pathx.png",
-    tech: ["React 19", "TypeScript", "Vite 6", "Motion"]
+    tech: ["React 19", "TypeScript", "Vite 6", "Motion"],
+    github: "https://github.com/allenchandev25-del/PathX"
   },
   {
     title: "Lumina AI Assistant",
     description: "Privacy-First AI Tutoring Platform. Architected a privacy-first AI platform by migrating external API dependencies to locally-hosted inference pipelines (Ollama). Integrated dynamic interactive Flashcards directly from LLM inferences.",
     image: "/lumina.png",
-    tech: ["React", "TypeScript", "Ollama"]
+    tech: ["React", "TypeScript", "Ollama"],
+    github: "https://github.com/allenchandev25-del/AI_Tutoring_Assistant"
   },
   {
     title: "Edgelytics",
     description: "Edge Computing IoT Framework. Constructed an edge-computing framework to ingest and manage real-time telemetry from Arduino microcontrollers. Implemented a local anomaly-detection algorithm to trace impossible environmental data spikes.",
     image: "/edgelytics.png",
-    tech: ["Python", "Flask", "Arduino"]
+    tech: ["Python", "Flask", "Arduino"],
+    github: "https://github.com/allenchandev25-del/Edgelytics"
   },
   {
     title: "Emergency Geo-Router",
     description: "Fault-Tolerant Redundant Routing System. Deployed a fault-tolerant routing application to triangulate and transmit location data in offline-critical environments. Wrote robust handling algorithms to detect low-accuracy GPS metrics.",
     image: "/georouter.png",
-    tech: ["Geolocation API", "React"]
+    tech: ["Geolocation API", "React"],
+    github: "https://github.com/allenchandev25-del/universal-emergency-resource-router"
   },
   {
     title: "NextChapter",
     description: "Personalized Book Recommendation System. Refactored a desktop-based Python application handling complex graphical frame life-cycles and state management. Re-architected the state pipeline for a personalized book recommendation engine.",
     image: "/nextchapter.png",
-    tech: ["Python", "Tkinter"]
+    tech: ["Python", "Tkinter"],
+    github: "https://github.com/allenchandev25-del/Book-Recommendation-System"
   }
 ];
 
@@ -79,7 +84,7 @@ const FeaturedProjects = () => {
               </div>
               <div className="flex items-start justify-between mb-3 gap-4">
                 <h3 className="text-2xl font-bold">{work.title}</h3>
-                <a href="https://github.com/allenchandev25-del" target="_blank" rel="noopener noreferrer" className="shrink-0 p-2 bg-neutral-200 dark:bg-neutral-800 rounded-full hover:scale-110 transition-transform text-neutral-600 dark:text-neutral-400 hover:text-black dark:hover:text-white" title="View Source">
+                <a href={work.github || "https://github.com/allenchandev25-del"} target="_blank" rel="noopener noreferrer" className="shrink-0 p-2 bg-neutral-200 dark:bg-neutral-800 rounded-full hover:scale-110 transition-transform text-neutral-600 dark:text-neutral-400 hover:text-black dark:hover:text-white" title="View Source">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.02c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
                   </svg>
