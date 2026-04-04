@@ -124,40 +124,11 @@ export default function App() {
       <header className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 bg-white/80 dark:bg-neutral-950/80 backdrop-blur-md border-b border-neutral-200 dark:border-neutral-800">
         <div className="flex items-center group cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
           {/* 
-            This is a crisp, scalable SVG replication of your AC logo monogram! 
-            If you want to use the exact PNG image you uploaded instead, simply delete this <svg> 
-            and uncomment the <img> tags below, after putting your image in the public folder.
+            Since coding perfect SVG curves blindly is creating a wonky result, 
+            please drop your actual cut-out logo images into the `public` folder!
           */}
-          <svg viewBox="0 0 100 100" className="w-10 h-10 transition-transform group-hover:scale-105" strokeLinecap="round" strokeLinejoin="round" fill="none">
-            {/* Dark mode version with glowing effect */}
-            <g className="hidden dark:block" stroke="white" strokeWidth="8" style={{ filter: 'drop-shadow(0 0 6px rgba(255,255,255,0.4))' }}>
-              <path d="M 75 25 A 35 35 0 1 0 75 75" />
-              <path d="M 45 20 L 20 80 M 45 20 L 60 55 C 70 85 90 55 90 35" />
-              <path d="M 30 60 L 55 60" />
-            </g>
-            {/* Light mode version with gradients */}
-            <g className="dark:hidden" strokeWidth="8">
-              <defs>
-                <linearGradient id="c-grad" x1="0" y1="0" x2="1" y2="1">
-                  <stop offset="0%" stopColor="#0B1A30" />
-                  <stop offset="50%" stopColor="#81573B" />
-                  <stop offset="100%" stopColor="#C88E54" />
-                </linearGradient>
-                <linearGradient id="a-grad" x1="0" y1="0" x2="1" y2="1">
-                  <stop offset="0%" stopColor="#0B1A30" />
-                  <stop offset="100%" stopColor="#1E2F49" />
-                </linearGradient>
-              </defs>
-              <path d="M 75 25 A 35 35 0 1 0 75 75" stroke="url(#c-grad)" />
-              <path d="M 45 20 L 20 80 M 45 20 L 60 55 C 70 85 90 55 90 35" stroke="url(#a-grad)" />
-              <path d="M 30 60 L 55 60" stroke="url(#a-grad)" />
-            </g>
-          </svg>
-
-          {/* 
           <img src="/logo-light.png" className="w-10 h-10 object-contain dark:hidden block" alt="Logo" />
           <img src="/logo-dark.png" className="w-10 h-10 object-contain hidden dark:block" alt="Logo" />
-          */}
         </div>
         <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-neutral-600 dark:text-neutral-400">
           <a href="#about" className="hover:text-neutral-900 dark:hover:text-white transition-colors">About</a>
