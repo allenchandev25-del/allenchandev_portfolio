@@ -138,7 +138,7 @@ export default function App() {
       <MagneticDock />
 
       <section id="home">
-        <BackgroundPaths title="Creative Developer" />
+        <BackgroundPaths title="Allen Chandev" />
       </section>
 
       <div className="max-w-5xl mx-auto px-6 space-y-40 py-20">
