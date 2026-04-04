@@ -76,7 +76,7 @@ export function BackgroundPaths({
                             <motion.span
                                 key={wordIndex}
                                 whileHover={{ scale: 1.35 }}
-                                transition={{ type: "spring", stiffness: 300, damping: 10 }}
+                                transition={{ type: "tween", ease: "easeOut", duration: 0.4 }}
                                 className="inline-block mr-4 last:mr-0 text-transparent bg-clip-text bg-gradient-to-r from-neutral-900 to-neutral-700/80 dark:from-white dark:to-white/80 cursor-default"
                             >
                                 {word}
