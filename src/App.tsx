@@ -55,7 +55,7 @@ const skillCategories = [
   },
   {
     title: "Tools & Hardware",
-    skills: ["VS Code", "Git/GitHub", "Burp Suite", "Nmap", "Wireshark", "Ollama", "Tkinter", "Arduino/ESP8266" ]
+    skills: ["Linux", "VS Code", "Git/GitHub", "Burp Suite", "Nmap", "Wireshark", "Ollama", "Tkinter", "Arduino/ESP8266" ]
   }
 ];
 
