@@ -46,7 +46,8 @@ const works = [
 const skills = [
   "Java", "TypeScript", "JavaScript", "Python", "C/C++", "HTML/CSS",
   "React", "Vite", "Flask", "Tailwind CSS", "Tkinter",
-  "Ollama", "Firebase", "Git/GitHub", "VS Code"
+  "Ollama", "Firebase", "Git/GitHub", "VS Code",
+  "Burp Suite", "Nmap", "Wireshark", "Arduino/ESP8266"
 ];
 
 const education = [
