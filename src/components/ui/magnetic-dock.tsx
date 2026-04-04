@@ -12,10 +12,8 @@ import {
   useSpring
 } from "framer-motion";
 
-// shared mouse position
 const MouseContext = createContext({ x: 0, y: 0 });
 
-// SVG icons
 const GithubIcon = () => (
   <svg
     width="28"
@@ -85,7 +83,6 @@ const MailIcon = () => (
   </svg>
 );
 
-// individual icon with magnetic effect
 function DockIcon({ icon, href }: { icon: React.ReactNode, href?: string }) {
   const ref = useRef<HTMLAnchorElement>(null);
   const mouse = useContext(MouseContext);
@@ -120,7 +117,6 @@ function DockIcon({ icon, href }: { icon: React.ReactNode, href?: string }) {
   );
 }
 
-// main dock
 export default function MagneticDock() {
   const [pos, setPos] = useState({ x: 0, y: 0 });
 

@@ -137,13 +137,11 @@ export default function App() {
 
       <MagneticDock />
 
-      {/* Hero Section */}
       <section id="home">
         <BackgroundPaths title="Creative Developer" />
       </section>
 
       <div className="max-w-5xl mx-auto px-6 space-y-40 py-20">
-        {/* About Section */}
         <section id="about" className="scroll-mt-32">
           <div className="flex flex-col md:flex-row gap-12 items-center">
             <div className="w-48 h-48 md:w-64 md:h-64 shrink-0 rounded-full overflow-hidden border-4 border-neutral-200 dark:border-neutral-800 shadow-xl">
@@ -175,7 +173,6 @@ export default function App() {
 
         <Separator className="bg-neutral-200 dark:bg-neutral-800" />
 
-        {/* Skills Section */}
         <section id="skills" className="scroll-mt-32">
           <h2 className="text-3xl md:text-4xl font-bold mb-8">Skills & Technologies</h2>
           <div className="flex flex-wrap gap-3">
@@ -194,7 +191,6 @@ export default function App() {
       <FeaturedProjects />
 
       <div className="max-w-5xl mx-auto px-6 space-y-40 py-20">
-        {/* Education Section */}
         <section id="education" className="scroll-mt-32">
           <h2 className="text-3xl md:text-4xl font-bold mb-8">Education</h2>
           <div className="grid gap-6 md:grid-cols-2">
@@ -212,7 +208,6 @@ export default function App() {
 
         <Separator className="bg-neutral-200 dark:bg-neutral-800" />
 
-        {/* Get in Touch Section */}
         <section id="contact" className="scroll-mt-32 text-center max-w-2xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Get In Touch</h2>
           <p className="text-lg text-neutral-600 dark:text-neutral-400 mb-8">
