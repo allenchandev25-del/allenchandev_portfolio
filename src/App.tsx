@@ -46,15 +46,15 @@ const works = [
 const skillCategories = [
   {
     title: "Programming Languages",
-    skills: ["Java", "TypeScript", "JavaScript", "Python", "C/C++", "HTML/CSS"]
+    skills: ["Java", "TypeScript", "JavaScript", "Python", "C" ]
   },
   {
     title: "Web & Databases",
-    skills: ["React", "Vite", "Flask", "Tailwind CSS", "Firebase", "MySQL"]
+    skills: ["HTML", "CSS3", "React", "Vite", "Flask", "Tailwind CSS", "Firebase", "MySQL"]
   },
   {
     title: "Tools & Hardware",
-    skills: ["VS Code", "Git/GitHub", "Burp Suite", "Nmap", "Wireshark", "Ollama", "Tkinter", "Arduino/ESP8266"]
+    skills: ["VS Code", "Git/GitHub", "Burp Suite", "Nmap", "Wireshark", "Ollama", "Tkinter", "Arduino/ESP8266" ]
   }
 ];
 
