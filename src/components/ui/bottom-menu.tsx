@@ -41,7 +41,6 @@ const MailIcon = () => (
   </svg>
 );
 
-// Change Here
 const MAIN_NAV = [
   { icon: PlusSignIcon, name: "home" },
   { icon: Search01Icon, name: "search" },
@@ -79,7 +78,6 @@ const BottomMenu = () => {
     "default" | "home" | "search" | "notifications" | "profile" | "theme"
   >("default");
 
-  // Track selected theme
   const [theme, setTheme] = useState<"light" | "dark" | "system">("dark");
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -234,7 +232,6 @@ const BottomMenu = () => {
       ref={containerRef}
       className={cn("fixed bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center z-50")}
     >
-      {/* Hidden for measurement */}
       <div
         ref={hiddenRef}
         className="absolute left-[-9999px] top-[-9999px] invisible pointer-events-none"
@@ -244,7 +241,6 @@ const BottomMenu = () => {
         </div>
       </div>
 
-      {/* Animated submenu */}
       <AnimatePresence mode="wait">
         {view !== "default" && (
           <motion.div
@@ -321,7 +317,6 @@ const BottomMenu = () => {
         )}
       </AnimatePresence>
 
-      {/* Toolbar */}
       <div className="flex items-center gap-1 bg-background/95 backdrop-blur-xl border border-border rounded-[18px] p-1 mt-3 z-10 shadow-lg">
         {MAIN_NAV.map(({ icon: Icon, name }) => (
           <button
