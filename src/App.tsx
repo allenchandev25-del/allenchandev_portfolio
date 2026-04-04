@@ -4,6 +4,7 @@ import { BackgroundPaths } from '@/src/components/ui/background-paths';
 import MagneticDock from '@/src/components/ui/magnetic-dock';
 import Switch from '@/src/components/ui/toggle-switch';
 import { Separator } from '@/src/components/ui/separator';
+import { InteractiveBackground } from '@/src/components/ui/mouse-animation';
 
 const works = [
   {
@@ -129,7 +130,8 @@ export default function App() {
   }, [isDark]);
 
   return (
-    <div className="min-h-screen bg-white dark:bg-neutral-950 text-neutral-900 dark:text-neutral-100 transition-colors duration-300 font-sans pb-32">
+    <div className="min-h-screen bg-white dark:bg-neutral-950 text-neutral-900 dark:text-neutral-100 transition-colors duration-300 font-sans pb-32 relative">
+      <InteractiveBackground />
       <header className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 bg-white/80 dark:bg-neutral-950/80 backdrop-blur-md border-b border-neutral-200 dark:border-neutral-800">
         <div className="flex items-center group cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
           {/* 

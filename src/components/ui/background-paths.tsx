@@ -73,12 +73,14 @@ export function BackgroundPaths({
                 >
                     <h1 className="text-5xl sm:text-7xl md:text-8xl font-bold mb-8 tracking-tighter">
                         {words.map((word, wordIndex) => (
-                            <span
+                            <motion.span
                                 key={wordIndex}
-                                className="inline-block mr-4 last:mr-0 text-transparent bg-clip-text bg-gradient-to-r from-neutral-900 to-neutral-700/80 dark:from-white dark:to-white/80"
+                                whileHover={{ scale: 1.35 }}
+                                transition={{ type: "spring", stiffness: 300, damping: 10 }}
+                                className="inline-block mr-4 last:mr-0 text-transparent bg-clip-text bg-gradient-to-r from-neutral-900 to-neutral-700/80 dark:from-white dark:to-white/80 cursor-default"
                             >
                                 {word}
-                            </span>
+                            </motion.span>
                         ))}
                     </h1>
 
