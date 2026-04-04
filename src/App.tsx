@@ -43,11 +43,19 @@ const works = [
   }
 ];
 
-const skills = [
-  "Java", "TypeScript", "JavaScript", "Python", "C/C++", "HTML/CSS",
-  "React", "Vite", "Flask", "Tailwind CSS", "Tkinter",
-  "Ollama", "Firebase", "Git/GitHub", "VS Code",
-  "Burp Suite", "Nmap", "Wireshark", "Arduino/ESP8266"
+const skillCategories = [
+  {
+    title: "Programming Languages",
+    skills: ["Java", "TypeScript", "JavaScript", "Python", "C/C++", "HTML/CSS"]
+  },
+  {
+    title: "Web & Databases",
+    skills: ["React", "Vite", "Flask", "Tailwind CSS", "Firebase", "MySQL"]
+  },
+  {
+    title: "Tools & Hardware",
+    skills: ["VS Code", "Git/GitHub", "Burp Suite", "Nmap", "Wireshark", "Ollama", "Tkinter", "Arduino/ESP8266"]
+  }
 ];
 
 const education = [
@@ -183,14 +191,23 @@ export default function App() {
 
         <section id="skills" className="scroll-mt-32">
           <h2 className="text-3xl md:text-4xl font-bold mb-8">Skills & Technologies</h2>
-          <div className="flex flex-wrap gap-3">
-            {skills.map((skill, index) => (
-              <span
-                key={index}
-                className="px-4 py-2 bg-neutral-100 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-full text-sm font-medium"
-              >
-                {skill}
-              </span>
+          <div className="space-y-10">
+            {skillCategories.map((category, index) => (
+              <div key={index}>
+                <h3 className="text-xl font-semibold mb-4 text-neutral-800 dark:text-neutral-200 tracking-wide">
+                  {category.title}
+                </h3>
+                <div className="flex flex-wrap gap-3">
+                  {category.skills.map((skill, idx) => (
+                    <span
+                      key={idx}
+                      className="px-4 py-2 bg-neutral-100 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-[12px] text-sm font-medium hover:bg-neutral-200 dark:hover:bg-neutral-800 transition-colors shadow-sm"
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
             ))}
           </div>
         </section>
