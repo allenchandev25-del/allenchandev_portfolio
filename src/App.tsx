@@ -148,7 +148,20 @@ export default function App() {
           <a href="#education" className="hover:text-neutral-900 dark:hover:text-white transition-colors">Education</a>
           <a href="#contact" className="hover:text-neutral-900 dark:hover:text-white transition-colors">Contact</a>
         </nav>
-        <div>
+        <div className="flex items-center gap-2">
+          <a 
+            href="/allenchandev.pdf" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-neutral-100 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 text-[10px] font-bold uppercase tracking-widest text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white hover:bg-neutral-200 dark:hover:bg-neutral-800 transition-all shadow-sm"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            Resume
+          </a>
           <Switch checked={isDark} onChange={(e) => setIsDark(e.target.checked)} />
         </div>
       </header>
