@@ -6,13 +6,21 @@ import Switch from '@/src/components/ui/toggle-switch';
 import { Separator } from '@/src/components/ui/separator';
 import { InteractiveBackground } from '@/src/components/ui/mouse-animation';
 
-const selectedWorks = [
+type Project = {
+  title: string;
+  description: string;
+  image: string;
+  tech: string[];
+  link?: string;
+  github?: string;
+};
+
+const selectedWorks: Project[] = [
   {
     title: "Wazabi E-commerce",
     description: "Full-stack luxury streetwear platform. Engineered a secure payment ecosystem with Razorpay and custom JWT/Firebase authentication fallback. Implemented atomic inventory synchronization and an automated asset management pipeline.",
     image: "/wazabi.png",
     tech: ["React", "Node.js", "Express", "SQLite", "Razorpay", "Firebase"],
-    github: "https://github.com/allenchandev25-del/Wazabi",
     link: "https://wazabi.in"
   },
   {
