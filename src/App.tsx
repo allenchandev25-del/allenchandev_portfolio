@@ -152,6 +152,103 @@ const Section = ({ id, title, children, className = "" }: { id: string, title: s
   </motion.section>
 );
 
+const ServicesSection = () => (
+  <Section id="services" title="Services">
+    <div className="grid gap-8 md:grid-cols-3">
+      {services.map((service, idx) => (
+        <div key={idx} className="p-8 rounded-3xl border border-neutral-200 dark:border-neutral-800 bg-neutral-50/50 dark:bg-neutral-900/30 group hover:border-slate-300 dark:hover:border-slate-700 transition-all duration-500">
+          <div className="p-4 bg-white dark:bg-neutral-800 rounded-2xl w-fit mb-6 shadow-sm group-hover:scale-110 transition-transform text-slate-600 dark:text-slate-400">
+            {service.icon}
+          </div>
+          <h3 className="text-xl font-bold mb-4 tracking-tight">{service.title}</h3>
+          <p className="text-neutral-600 dark:text-neutral-400 leading-relaxed text-sm">
+            {service.description}
+          </p>
+        </div>
+      ))}
+    </div>
+  </Section>
+);
+
+const AchievementsSection = () => (
+  <Section id="achievements" title="Achievements">
+    <div className="grid gap-6 md:grid-cols-2">
+      {achievements.map((item, index) => (
+        <div key={index} className="p-8 rounded-3xl border border-neutral-200 dark:border-neutral-800 bg-neutral-50/50 dark:bg-neutral-900/30 group hover:border-blue-500/30 transition-all duration-500">
+          <div className="flex justify-between items-start mb-6">
+            <div className="p-3 bg-white dark:bg-neutral-800 rounded-2xl shadow-sm group-hover:scale-110 transition-transform">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-slate-600 dark:text-slate-400">
+                <path d="M12 15l8.38-4.68a2 2 0 0 0 1.14-1.63L22 4.41l-9 4.38-9-4.38-1 4.28a2 2 0 0 0 1.14 1.63L12 15z"></path>
+                <path d="M12 15v7"></path>
+              </svg>
+            </div>
+            <span className="text-[10px] font-black uppercase tracking-widest text-neutral-400 px-3 py-1 bg-white dark:bg-neutral-800 rounded-full">
+              {item.date}
+            </span>
+          </div>
+          <h3 className="font-bold text-xl mb-2 tracking-tight">{item.title}</h3>
+          <p className="text-neutral-600 dark:text-neutral-400 text-sm leading-relaxed">{item.description}</p>
+        </div>
+      ))}
+    </div>
+  </Section>
+);
+
+const SelectedWorks = () => {
+  return (
+    <Section id="work" title="Selected Works" className="max-w-7xl mx-auto px-6">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        {selectedWorks.map((work, idx) => (
+          <motion.div
+            key={idx}
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: idx * 0.1 }}
+            className="w-full shrink-0 group/card relative"
+          >
+            <div className="relative overflow-hidden rounded-[2.5rem] aspect-[16/10] shadow-2xl bg-neutral-100 dark:bg-neutral-900 mb-8 border border-neutral-200 dark:border-neutral-800 transition-all duration-500 group-hover/card:shadow-slate-500/10">
+              <div className="absolute top-8 left-8 z-20 text-7xl font-black text-white/10 group-hover/card:text-white/20 transition-colors pointer-events-none">
+                0{idx + 1}
+              </div>
+              <img src={work.image} alt={work.title} className="w-full h-full object-cover transition-all duration-1000 group-hover/card:scale-110" referrerPolicy="no-referrer" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover/card:opacity-100 transition-opacity duration-500" />
+              <div className="absolute bottom-8 left-8 flex flex-wrap gap-2 translate-y-4 opacity-0 group-hover/card:translate-y-0 group-hover/card:opacity-100 transition-all duration-500 z-30">
+                {work.tech.slice(0, 3).map((t, i) => (
+                  <span key={i} className="px-3 py-1.5 bg-white/20 backdrop-blur-md border border-white/30 rounded-full text-[10px] font-black text-white uppercase tracking-widest">{t}</span>
+                ))}
+              </div>
+            </div>
+            <div className="px-4">
+              <div className="flex items-center justify-between mb-4">
+                <h3 className="text-2xl md:text-3xl font-bold tracking-tight group-hover/card:text-slate-600 dark:group-hover/card:text-slate-400 transition-colors">{work.title}</h3>
+                <div className="flex gap-3">
+                  {work.link && (
+                    <a href={work.link} target="_blank" rel="noopener noreferrer" className="p-3 bg-neutral-100 dark:bg-neutral-800 rounded-2xl hover:bg-slate-700 hover:text-white transition-all shadow-sm" title="Live Demo">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                    </a>
+                  )}
+                  {work.github && (
+                    <a href={work.github} target="_blank" rel="noopener noreferrer" className="p-3 bg-neutral-100 dark:bg-neutral-800 rounded-2xl hover:bg-neutral-900 dark:hover:bg-white hover:text-white dark:hover:text-black transition-all shadow-sm" title="View Source">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.02c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    </a>
+                  )}
+                </div>
+              </div>
+              <p className="text-lg text-neutral-600 dark:text-neutral-400 mb-8 leading-relaxed line-clamp-2 group-hover/card:line-clamp-none transition-all duration-500">{work.description}</p>
+              <div className="flex flex-wrap gap-2.5">
+                {work.tech.map((t, i) => (
+                  <span key={i} className="text-[11px] px-3 py-1.5 bg-neutral-50 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-xl font-black uppercase tracking-widest text-neutral-400 group-hover/card:text-neutral-900 dark:group-hover/card:text-neutral-200 transition-all">{t}</span>
+                ))}
+              </div>
+            </div>
+          </motion.div>
+        ))}
+      </div>
+    </Section>
+  );
+};
+
 const FeaturedProjects = () => {
   return (
     <Section id="projects" title="Featured Projects" className="max-w-7xl mx-auto px-6">
@@ -281,10 +378,12 @@ export default function App() {
         </div>
         <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-neutral-600 dark:text-neutral-400">
           <a href="#about" className="hover:text-neutral-900 dark:hover:text-white transition-colors">About</a>
+          <a href="#services" className="hover:text-neutral-900 dark:hover:text-white transition-colors">Services</a>
           <a href="#skills" className="hover:text-neutral-900 dark:hover:text-white transition-colors">Skills</a>
           <a href="#experience" className="hover:text-neutral-900 dark:hover:text-white transition-colors">Experience</a>
-          <a href="#projects" className="hover:text-neutral-900 dark:hover:text-white transition-colors">Projects</a>
+          <a href="#work" className="hover:text-neutral-900 dark:hover:text-white transition-colors">Work</a>
           <a href="#education" className="hover:text-neutral-900 dark:hover:text-white transition-colors">Education</a>
+          <a href="#achievements" className="hover:text-neutral-900 dark:hover:text-white transition-colors">Awards</a>
           <a href="#contact" className="hover:text-neutral-900 dark:hover:text-white transition-colors">Contact</a>
         </nav>
         <div className="flex items-center gap-1">
@@ -346,6 +445,8 @@ export default function App() {
           </div>
         </Section>
 
+        <ServicesSection />
+
         <Section id="skills" title="Expertise">
           <div className="grid gap-12 md:grid-cols-3">
             {skillCategories.map((category, index) => (
@@ -401,6 +502,8 @@ export default function App() {
         </Section>
       </div>
 
+      <SelectedWorks />
+
       <FeaturedProjects />
 
       <div className="max-w-5xl mx-auto px-6 space-y-48 py-20">
@@ -425,6 +528,8 @@ export default function App() {
             ))}
           </div>
         </Section>
+
+        <AchievementsSection />
 
         <Section id="contact" title="Get In Touch" className="text-center !mb-40">
           <div className="max-w-2xl mx-auto">
