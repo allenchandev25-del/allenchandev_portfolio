@@ -78,29 +78,7 @@ const skillCategories = [
   }
 ];
 
-const services = [
-  {
-    title: "Full-Stack Development",
-    description: "Architecting and building responsive, scalable end-to-end web applications with modern tech stacks.",
-    icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
-    )
-  },
-  {
-    title: "E-Commerce Solutions",
-    description: "Designing premium, high-conversion online stores with custom Shopify themes and headless commerce platforms.",
-    icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
-    )
-  },
-  {
-    title: "UI/UX & Interactive Design",
-    description: "Crafting beautiful, modern interfaces with fluid animations, glassmorphism, and intuitive user experiences.",
-    icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m12 14 4-4"></path><path d="M3.34 19a10 10 0 1 1 17.32 0"></path></svg>
-    )
-  }
-];
+
 
 const achievements = [
   {
@@ -129,10 +107,7 @@ const experience = [
   }
 ];
 
-const education = [
-  { degree: "ICSE", school: "St Hilda's School Ooty", year: "2019 - 2025" },
-  { degree: "B.Tech Computer Science Engineering", school: "Karunya Institute of Technology and Sciences", year: "2025 - 2029" }
-];
+
 
 
 const Section = ({ id, title, children, className = "" }: { id: string, title: string, children: React.ReactNode, className?: string }) => (
@@ -152,23 +127,7 @@ const Section = ({ id, title, children, className = "" }: { id: string, title: s
   </motion.section>
 );
 
-const ServicesSection = () => (
-  <Section id="services" title="Services">
-    <div className="grid gap-8 md:grid-cols-3">
-      {services.map((service, idx) => (
-        <div key={idx} className="p-8 rounded-3xl border border-neutral-200 dark:border-neutral-800 bg-neutral-50/50 dark:bg-neutral-900/30 group hover:border-slate-300 dark:hover:border-slate-700 transition-all duration-500">
-          <div className="p-4 bg-white dark:bg-neutral-800 rounded-2xl w-fit mb-6 shadow-sm group-hover:scale-110 transition-transform text-slate-600 dark:text-slate-400">
-            {service.icon}
-          </div>
-          <h3 className="text-xl font-bold mb-4 tracking-tight">{service.title}</h3>
-          <p className="text-neutral-600 dark:text-neutral-400 leading-relaxed text-sm">
-            {service.description}
-          </p>
-        </div>
-      ))}
-    </div>
-  </Section>
-);
+
 
 const AchievementsSection = () => (
   <Section id="achievements" title="Achievements">
@@ -378,11 +337,9 @@ export default function App() {
         </div>
         <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-neutral-600 dark:text-neutral-400">
           <a href="#about" className="hover:text-neutral-900 dark:hover:text-white transition-colors">About</a>
-          <a href="#services" className="hover:text-neutral-900 dark:hover:text-white transition-colors">Services</a>
           <a href="#skills" className="hover:text-neutral-900 dark:hover:text-white transition-colors">Skills</a>
           <a href="#experience" className="hover:text-neutral-900 dark:hover:text-white transition-colors">Experience</a>
           <a href="#work" className="hover:text-neutral-900 dark:hover:text-white transition-colors">Work</a>
-          <a href="#education" className="hover:text-neutral-900 dark:hover:text-white transition-colors">Education</a>
           <a href="#achievements" className="hover:text-neutral-900 dark:hover:text-white transition-colors">Awards</a>
           <a href="#contact" className="hover:text-neutral-900 dark:hover:text-white transition-colors">Contact</a>
         </nav>
@@ -445,8 +402,6 @@ export default function App() {
           </div>
         </Section>
 
-        <ServicesSection />
-
         <Section id="skills" title="Expertise">
           <div className="grid gap-12 md:grid-cols-3">
             {skillCategories.map((category, index) => (
@@ -507,27 +462,7 @@ export default function App() {
       <FeaturedProjects />
 
       <div className="max-w-5xl mx-auto px-6 space-y-48 py-20">
-        <Section id="education" title="Academic">
-          <div className="grid gap-6 md:grid-cols-2">
-            {education.map((edu, index) => (
-              <div key={index} className="p-8 rounded-3xl border border-neutral-200 dark:border-neutral-800 bg-neutral-50/50 dark:bg-neutral-900/30 group hover:border-blue-500/30 transition-all duration-500">
-                <div className="flex justify-between items-start mb-6">
-                  <div className="p-3 bg-white dark:bg-neutral-800 rounded-2xl shadow-sm group-hover:scale-110 transition-transform">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-slate-600 dark:text-slate-400">
-                      <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
-                      <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
-                    </svg>
-                  </div>
-                  <span className="text-[10px] font-black uppercase tracking-widest text-neutral-400 px-3 py-1 bg-white dark:bg-neutral-800 rounded-full">
-                    {edu.year}
-                  </span>
-                </div>
-                <h3 className="font-bold text-xl mb-2 tracking-tight">{edu.school}</h3>
-                <p className="text-neutral-600 dark:text-neutral-400 text-sm leading-relaxed">{edu.degree}</p>
-              </div>
-            ))}
-          </div>
-        </Section>
+
 
         <AchievementsSection />
 
