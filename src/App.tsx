@@ -6,7 +6,7 @@ import Switch from '@/src/components/ui/toggle-switch';
 import { Separator } from '@/src/components/ui/separator';
 import { InteractiveBackground } from '@/src/components/ui/mouse-animation';
 
-const works = [
+const selectedWorks = [
   {
     title: "Wazabi E-commerce",
     description: "Full-stack luxury streetwear platform. Engineered a secure payment ecosystem with Razorpay and custom JWT/Firebase authentication fallback. Implemented atomic inventory synchronization and an automated asset management pipeline.",
@@ -21,7 +21,10 @@ const works = [
     image: "/dmpkart.png",
     tech: ["Shopify", "Liquid", "React", "Tailwind CSS"],
     link: "https://dmpkart.com"
-  },
+  }
+];
+
+const works = [
   {
     title: "PathX",
     description: "Autonomous Vehicle Simulator. Engineered a high-fidelity simulator leveraging Kinematic Bicycle Models and Pure Pursuit algorithms at 60Hz. Designed a premium dark-mode dashboard with real-time telemetry visualization using D3-driven logic.",
@@ -72,6 +75,43 @@ const skillCategories = [
   {
     title: "Tools & Hardware",
     skills: ["Linux", "VS Code", "Git/GitHub", "Burp Suite", "Nmap", "Wireshark", "Ollama", "Tkinter", "Arduino/ESP8266" ]
+  }
+];
+
+const services = [
+  {
+    title: "Full-Stack Development",
+    description: "Architecting and building responsive, scalable end-to-end web applications with modern tech stacks.",
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+    )
+  },
+  {
+    title: "E-Commerce Solutions",
+    description: "Designing premium, high-conversion online stores with custom Shopify themes and headless commerce platforms.",
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+    )
+  },
+  {
+    title: "UI/UX & Interactive Design",
+    description: "Crafting beautiful, modern interfaces with fluid animations, glassmorphism, and intuitive user experiences.",
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m12 14 4-4"></path><path d="M3.34 19a10 10 0 1 1 17.32 0"></path></svg>
+    )
+  }
+];
+
+const achievements = [
+  {
+    title: "Google Gemini Hackathon Winner",
+    date: "2025",
+    description: "Built an innovative AI-powered solution leveraging Gemini Pro models, securing top honors for technical complexity."
+  },
+  {
+    title: "AWS Certified Cloud Practitioner",
+    date: "2024",
+    description: "Demonstrated foundational knowledge of AWS cloud services, security, architecture, and core pricing models."
   }
 ];
 
