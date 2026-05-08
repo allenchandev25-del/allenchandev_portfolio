@@ -5,7 +5,6 @@ import MagneticDock from '@/src/components/ui/magnetic-dock';
 import Switch from '@/src/components/ui/toggle-switch';
 import { Separator } from '@/src/components/ui/separator';
 import { InteractiveBackground } from '@/src/components/ui/mouse-animation';
-import { GitHubCalendar } from 'react-github-calendar';
 
 const works = [
   {
@@ -358,20 +357,6 @@ export default function App() {
                 </div>
               </div>
             ))}
-          </div>
-        </Section>
-
-        <Section id="contributions" title="Open Source">
-          <div className="p-8 rounded-3xl border border-neutral-200 dark:border-neutral-800 bg-neutral-50/50 dark:bg-neutral-900/30 overflow-x-auto flex justify-center group hover:border-slate-300 dark:hover:border-slate-700 transition-all duration-500">
-            <GitHubCalendar 
-              username="allenchandev25-del" 
-              colorScheme={isDark ? "dark" : "light"}
-              theme={{
-                light: ['#f0f0f0', '#cbd5e1', '#94a3b8', '#64748b', '#334155'],
-                dark: ['#171717', '#334155', '#475569', '#64748b', '#94a3b8']
-              }}
-              style={{ margin: 'auto' }}
-            />
           </div>
         </Section>
       </div>
