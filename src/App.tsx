@@ -89,14 +89,14 @@ const skillCategories = [
 
 const achievements = [
   {
-    title: "Google Gemini Hackathon Winner",
-    date: "2025",
-    description: "Built an innovative AI-powered solution leveraging Gemini Pro models, securing top honors for technical complexity."
+    title: "Google Cloud Skill Badges",
+    date: "2026",
+    description: "Completed comprehensive Google Cloud skill training and earned associated credentials for cloud architecture and data processing."
   },
   {
-    title: "AWS Certified Cloud Practitioner",
-    date: "2024",
-    description: "Demonstrated foundational knowledge of AWS cloud services, security, architecture, and core pricing models."
+    title: "Google Cloud Digital Leader",
+    date: "2026",
+    description: "Demonstrated broad knowledge of cloud computing concepts and Google Cloud products, services, tools, features, benefits, and use cases."
   }
 ];
 
@@ -468,7 +468,6 @@ export default function App() {
         <SelectedWorks />
         <FeaturedProjects />
       </div>
-
       <div className="max-w-5xl mx-auto px-6 space-y-48 py-20">
 
 
