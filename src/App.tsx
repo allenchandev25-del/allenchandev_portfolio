@@ -32,14 +32,13 @@ const selectedWorks: Project[] = [
   }
 ];
 
-const works = [
+const works: Project[] = [
   {
     title: "PathX",
     description: "Autonomous Vehicle Simulator. Engineered a high-fidelity simulator leveraging Kinematic Bicycle Models and Pure Pursuit algorithms at 60Hz. Designed a premium dark-mode dashboard with real-time telemetry visualization using D3-driven logic.",
     image: "/pathx.png",
     tech: ["React 19", "TypeScript", "Vite 6", "Motion"],
-    github: "https://github.com/allenchandev25-del/PathX",
-    link: "https://pathx-sim.vercel.app"
+    github: "https://github.com/allenchandev25-del/PathX"
   },
   {
     title: "Lumina AI Assistant",
@@ -465,9 +464,10 @@ export default function App() {
         </Section>
       </div>
 
-      <SelectedWorks />
-
-      <FeaturedProjects />
+      <div className="space-y-48 py-20">
+        <SelectedWorks />
+        <FeaturedProjects />
+      </div>
 
       <div className="max-w-5xl mx-auto px-6 space-y-48 py-20">
 
