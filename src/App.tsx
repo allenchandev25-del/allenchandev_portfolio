@@ -16,6 +16,13 @@ const works = [
     link: "https://wazabi.in"
   },
   {
+    title: "DMPkart",
+    description: "Designed and deployed a production-grade Shopify store for a women's ethnic wear brand, specializing in theme customization and performance optimization.",
+    image: "/dmpkart.png",
+    tech: ["Shopify", "Liquid", "React", "Tailwind CSS"],
+    link: "https://dmpkart.com"
+  },
+  {
     title: "PathX",
     description: "Autonomous Vehicle Simulator. Engineered a high-fidelity simulator leveraging Kinematic Bicycle Models and Pure Pursuit algorithms at 60Hz. Designed a premium dark-mode dashboard with real-time telemetry visualization using D3-driven logic.",
     image: "/pathx.png",
@@ -118,7 +125,7 @@ const FeaturedProjects = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.1 }}
-              className="w-[350px] md:w-[500px] lg:w-[600px] shrink-0 snap-center group/card relative"
+              className="w-[280px] md:w-[400px] lg:w-[450px] shrink-0 snap-center group/card relative"
             >
               <div className="relative overflow-hidden rounded-[2.5rem] aspect-[16/10] shadow-2xl bg-neutral-100 dark:bg-neutral-900 mb-8 border border-neutral-200 dark:border-neutral-800 transition-all duration-500 group-hover/card:shadow-slate-500/10">
                 {/* Index Number Overlay */}
@@ -167,17 +174,19 @@ const FeaturedProjects = () => {
                         </svg>
                       </a>
                     )}
-                    <a 
-                      href={work.github || "https://github.com/allenchandev25-del"} 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
-                      className="p-3 bg-neutral-100 dark:bg-neutral-800 rounded-2xl hover:bg-neutral-900 dark:hover:bg-white hover:text-white dark:hover:text-black transition-all shadow-sm"
-                      title="View Source"
-                    >
-                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                        <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.02c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                      </svg>
-                    </a>
+                    {work.github && (
+                      <a 
+                        href={work.github} 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="p-3 bg-neutral-100 dark:bg-neutral-800 rounded-2xl hover:bg-neutral-900 dark:hover:bg-white hover:text-white dark:hover:text-black transition-all shadow-sm"
+                        title="View Source"
+                      >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                          <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.02c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                        </svg>
+                      </a>
+                    )}
                   </div>
                 </div>
                 
