@@ -73,7 +73,7 @@ const works: Project[] = [
 const skillCategories = [
   {
     title: "Programming Languages",
-    skills: ["Java", "TypeScript", "JavaScript", "Python", "C" ]
+    skills: ["Java", "TypeScript", "JavaScript", "Python", "C"]
   },
   {
     title: "Web & Databases",
@@ -81,7 +81,7 @@ const skillCategories = [
   },
   {
     title: "Tools & Hardware",
-    skills: ["Linux", "VS Code", "Git/GitHub", "Burp Suite", "Nmap", "Wireshark", "Ollama", "Tkinter", "Arduino/ESP8266" ]
+    skills: ["Linux", "VS Code", "Git/GitHub", "Burp Suite", "Nmap", "Wireshark", "Ollama", "Tkinter", "Arduino/ESP8266"]
   }
 ];
 
@@ -110,6 +110,17 @@ const experience = [
       "DMPkart: Designed and deployed a production-grade Shopify store for a women's ethnic wear brand, specializing in theme customization and performance optimization.",
       "Custom Full-Stack Development: Building tailored systems for clients using React, Node.js, and modern cloud infrastructures.",
       "UI/UX Design: Creating premium, conversion-focused interfaces with a focus on responsive and accessible design."
+    ]
+  },
+  {
+    role: "Penetration Tester (Intern)",
+    company: "HackersDaddy Cyber Security Solutions",
+    period: "June 2026",
+    description: "Engaging in offensive security practices and conducting comprehensive Vulnerability Assessment and Penetration Testing (VAPT) to identify security vulnerabilities and develop remediation strategies.",
+    highlights: [
+      "VAPT: Performed hands-on labs and simulations to identify security vulnerabilities in network infrastructures.",
+      "Threat Intelligence: Leveraged threat intelligence methodologies to secure business systems and applications.",
+      "Remediation: Developed actionable mitigation and remediation strategies in line with industry standards."
     ]
   }
 ];
@@ -235,17 +246,17 @@ const FeaturedProjects = () => {
                 <div className="absolute top-8 left-8 z-20 text-7xl font-black text-white/10 group-hover/card:text-white/20 transition-colors pointer-events-none">
                   0{idx + 1}
                 </div>
-                
+
                 <img
                   src={work.image}
                   alt={work.title}
                   className="w-full h-full object-cover transition-all duration-1000 group-hover/card:scale-110"
                   referrerPolicy="no-referrer"
                 />
-                
+
                 {/* Gradient Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover/card:opacity-100 transition-opacity duration-500" />
-                
+
                 {/* Tech Badges on Image (Bottom Left) */}
                 <div className="absolute bottom-8 left-8 flex flex-wrap gap-2 translate-y-4 opacity-0 group-hover/card:translate-y-0 group-hover/card:opacity-100 transition-all duration-500 z-30">
                   {work.tech.slice(0, 3).map((t, i) => (
@@ -263,10 +274,10 @@ const FeaturedProjects = () => {
                   </h3>
                   <div className="flex gap-3">
                     {work.link && (
-                      <a 
-                        href={work.link} 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
+                      <a
+                        href={work.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="p-3 bg-neutral-100 dark:bg-neutral-800 rounded-2xl hover:bg-slate-700 hover:text-white transition-all shadow-sm"
                         title="Live Demo"
                       >
@@ -278,10 +289,10 @@ const FeaturedProjects = () => {
                       </a>
                     )}
                     {work.github && (
-                      <a 
-                        href={work.github} 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
+                      <a
+                        href={work.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="p-3 bg-neutral-100 dark:bg-neutral-800 rounded-2xl hover:bg-neutral-900 dark:hover:bg-white hover:text-white dark:hover:text-black transition-all shadow-sm"
                         title="View Source"
                       >
@@ -292,11 +303,11 @@ const FeaturedProjects = () => {
                     )}
                   </div>
                 </div>
-                
+
                 <p className="text-lg text-neutral-600 dark:text-neutral-400 mb-8 leading-relaxed line-clamp-2 group-hover/card:line-clamp-none transition-all duration-500">
                   {work.description}
                 </p>
-                
+
                 <div className="flex flex-wrap gap-2.5">
                   {work.tech.map((t, i) => (
                     <span key={i} className="text-[11px] px-3 py-1.5 bg-neutral-50 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-xl font-black uppercase tracking-widest text-neutral-400 group-hover/card:text-neutral-900 dark:group-hover/card:text-neutral-200 transition-all">
@@ -351,9 +362,9 @@ export default function App() {
           <a href="#contact" className="hover:text-neutral-900 dark:hover:text-white transition-colors">Contact</a>
         </nav>
         <div className="flex items-center gap-1">
-          <a 
-            href="/allenchandev.pdf" 
-            target="_blank" 
+          <a
+            href="/allenchandev.pdf"
+            target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-neutral-100/50 dark:bg-neutral-900/50 border border-neutral-200 dark:border-neutral-800 text-[11px] font-semibold text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white hover:bg-neutral-200 dark:hover:bg-neutral-800 transition-all shadow-sm"
           >
